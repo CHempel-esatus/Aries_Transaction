@@ -30,14 +30,15 @@
 
 3.	Employee (holder) scans the offered QR-Code with his wallet app.
 	1.	Wallet app does the following:
-		1.	Checks for t_o query parameter.
-		2.	Checks for c_i query parameter.
+		1.	Check for t_o query parameter.
+		2.	Check for c_i query parameter.
 		3.	Search for the connection to endpoint + routing key from the connection invitation.
-		4.	Send a TransactionResponse message to the existing connection. Message contains the given Transaction ID from the t_o parameter.
+		4.	Send a TransactionResponse message to the existing connection.
+			Message contains the given Transaction ID from the t_o parameter.
 
 4.	Employers Agent (verifier) receives the TransactionResponse message.
 	1.	Agent checks for the TransactionRecord for the Transaction ID from the Transaction Response Message.
-			TransactionRecord contains the Proof Request from the website.
+		TransactionRecord contains the Proof Request from the website.
 	2.	Agent sends the ProofRequest message to the connection from which it received the TransactionResponse message.
 
 5.	Employee (holder) receives the ProofRequest message.
@@ -46,4 +47,4 @@
 
 7.	Employers Agent (verifier) checks for validity of the received Proof.
 
-8.	Website allows access.
+8.	Website grants access.
