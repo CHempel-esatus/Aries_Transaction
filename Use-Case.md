@@ -15,7 +15,7 @@
   -	Offering an intranet website for all employees.
 
 
-###Sequence of events:
+### Sequence of events:
 1.	Employee (holder) wants to access the intranet website of his employer (issuer and verifier).
 
 2.	Website calls the employers SSI-Agent (verifier) to receive a QR-Code.
