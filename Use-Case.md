@@ -43,7 +43,7 @@
 
 5.	Employee (holder) receives the ProofRequest message.
 
-6.	Employee (holder) send Proof.
+6.	Employee (holder) sends Proof.
 
 7.	Employers Agent (verifier) checks for validity of the received Proof.
 
